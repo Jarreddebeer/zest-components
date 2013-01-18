@@ -1,0 +1,8 @@
+slides = [{img: 'app/FlexSlider/images/kitchen_adventurer_cheesecake_brownie.jpg', caption: 'Captions and cupcakes. Winning combination.' }, {img: 'app/FlexSlider/images/kitchen_adventurer_lemon.jpg', caption: 'This image is wrapped in a link!'}, {img: 'app/FlexSlider/images/kitchen_adventurer_donut.jpg', caption: 'How about another cupcake!'}, {img: 'app/FlexSlider/images/kitchen_adventurer_caramel.jpg', caption: 'This one looks delicious2'}]
+
+.flexslider          
+  ul.slides
+    each slide in slides
+      li
+        img(src= slide.img)
+        p.flex-caption= slide.caption
