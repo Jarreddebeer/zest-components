@@ -1,13 +1,13 @@
 requirejs.config({
   shim: {
-    'app/FlexSlider/vendor/jquery.flexslider-min': {
+    'app/FlexSlider/vendor/jquery.flexslider': {
       deps: ['jquery'],
       exports: '$'
     }
   }
 });
 
-define(['./vendor/jquery.flexslider-min', 'jade!./template', 'css!./vendor/flexslider.css', 'less!./style'], function($, template) {
+define(['./vendor/jquery.flexslider', 'jade!./template', 'css!./vendor/flexslider.css', 'less!./style'], function($, template) {
   return {
     render: template,
     pipe: true,    
