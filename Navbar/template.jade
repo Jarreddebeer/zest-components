@@ -1,0 +1,6 @@
+.navbar(class='#{navClass}')
+  .navbar-inner
+    .container
+      unless title == ''
+        a.brand(href='#') #{title}
+      {`contents`}
